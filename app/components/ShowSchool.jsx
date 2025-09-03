@@ -14,6 +14,7 @@ export default function SchoolInfo() {
       const res = await fetch(`/api/schools?search=${query}`);
       const data = await res.json();
       setSchools(data);
+      console.log(data);
     } catch (error) {
       console.error("Error fetching schools:", error);
     }
