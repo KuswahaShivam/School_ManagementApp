@@ -145,7 +145,7 @@ export default function SchoolForm() {
           <label className="font-semibold">Upload School Image</label>
           <input
             type="file"
-            className="border px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="border px-3 py-2 rounded-lg focus:outline-none overflow-hidden focus:ring-2 focus:ring-blue-400"
             {...register("image", { required: "School image is required" })}
           />
           {errors.image && (
